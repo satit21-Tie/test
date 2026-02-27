@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fish – Eel – Stingray | Classifier</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">FES Classifier</a>
+      <div class="links">
+        <a href="index.html" class="active">Home</a>
+        <a href="model.html">Try the Model</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Fish – Eel – Stingray</h1>
+      <p class="tag">An AI image classifier that recognizes three aquatic categories.</p>
+    </section>
+
+    <section class="grid two">
+      <div>
+        <h2>What this project is</h2>
+        <p>
+          This is a lightweight, browser‑based AI that classifies an uploaded image into one of three classes:
+          <strong>Fish</strong>, <strong>Eel</strong>, or <strong>Stingray</strong>. It runs entirely on your device
+          using TensorFlow.js and a model trained with Google <em>Teachable Machine</em>.
+        </p>
+        <ul class="bullets">
+          <li><strong>AI Type Used:</strong> Image Classification</li>
+          <li><strong>Classes Trained:</strong> Fish, Eel, Stingray</li>
+          <li><strong>Privacy Friendly:</strong> images never leave your browser</li>
+        </ul>
+        <a class="button primary" href="model.html">Upload a photo & classify →</a>
+      </div>
+      <div class="card card-glass">
+        <h3>How it works (at a glance)</h3>
+        <ol class="steps">
+          <li>We resize your image to 224×224 pixels.</li>
+          <li>The neural network extracts visual features.</li>
+          <li>Softmax picks the most probable class.</li>
+        </ol>
+        <div class="mini-flow">
+          <div class="node">📷 Image</div>
+          <div class="arrow">➜</div>
+          <div class="node">🧠 AI</div>
+          <div class="arrow">➜</div>
+          <div class="node">🏷️ Prediction</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="callout">
+      <h2>Trained with Teachable Machine</h2>
+      <p>
+        The model behind this demo was trained on a curated set of images collected for educational use from
+        public web sources (Google Images) and free stock sites (Unsplash, Pixabay). See <a href="about.html">About</a>
+        for methodology, ethical use, and credits.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 FES Classifier · Built for learning</p>
+  </footer>
+</body>
+</html>
